@@ -1,4 +1,4 @@
-import { api } from './_api';
+import { api } from '$lib/api';
 import type { RequestHandler } from '@sveltejs/kit';
 
 export const get: RequestHandler = async ({ locals }) => {
