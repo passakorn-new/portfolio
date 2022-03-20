@@ -1,12 +1,18 @@
 <script lang="ts">
   import { page } from '$app/stores';
+  import { fullname } from '$lib/settings.json';
 </script>
 
-<header>
+<header class="px-4 py-2 text-white flex justify-between sm:justify-center">
+  <p
+    class="p-4 text-sm tracking-widest uppercase font-mono duration-300 cursor-default hover:-translate-y-1 hover:scale-110 hover:text-tertiary sm:hidden"
+  >
+    {fullname}
+  </p>
   <nav>
     <ul>
       <li class:active={$page.url.pathname === '/'}>
-        <a sveltekit:prefetch href="/">Home</a>
+        <a sveltekit:prefetch href="/"> Home</a>
       </li>
       <li class:active={$page.url.pathname === '/about'}>
         <a sveltekit:prefetch href="/about">About</a>
@@ -22,19 +28,6 @@
 </header>
 
 <style>
-  header {
-    padding-left: 10px;
-    padding-right: 10px;
-    color: white;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-
   ul {
     position: relative;
     padding: 0;
@@ -75,4 +68,3 @@
     color: theme('colors.tertiary');
   }
 </style>
-

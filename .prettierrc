@@ -1,9 +1,9 @@
 {
-	"pluginSearchDirs": ["path_to_parent_of_node_modules"],
-	"plugins": ["prettier-plugin-svelte"],
-	"useTabs": false,
-	"singleQuote": true,
-	"trailingComma": "none",
-	"printWidth": 100,
-	"tabWidth": 2
+  "pluginSearchDirs": ["path_to_parent_of_node_modules"],
+  "plugins": ["prettier-plugin-svelte"],
+  "useTabs": false,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "printWidth": 100,
+  "tabWidth": 2
 }
