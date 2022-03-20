@@ -9,16 +9,16 @@
 
 <footer class="px-4 py-2 flex flex-col gap-4 justify-center items-center bottom-0">
   <div class="flex flex-row gap-4">
-    <IconButton href={github_link} target="_blank">
+    <IconButton name="github" href={github_link} target="_blank">
       <GithubIcon />
     </IconButton>
-    <IconButton href={linkedin_link} target="_blank">
+    <IconButton name="linkedin" href={linkedin_link} target="_blank">
       <LinkedInIcon />
     </IconButton>
-    <IconButton href={leetcode_link} target="_blank">
+    <IconButton name="leetcode" href={leetcode_link} target="_blank">
       <LeetcodeIcon />
     </IconButton>
-    <IconButton href={gmail_link} target="_blank">
+    <IconButton name="gmail" href={gmail_link} target="_blank">
       <GmailIcon />
     </IconButton>
   </div>
