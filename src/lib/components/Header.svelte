@@ -47,6 +47,12 @@
   }
 
   li.active {
+    animation: tab-selected 0.5s;
+    -webkit-animation: tab-selected 0.5s;
+    -moz-animation: tab-selected 0.5s;
+    -o-animation: tab-selected 0.5s;
+    -ms-animation: tab-selected 0.5s;
+    transform: scale(1.15);
     border-bottom: 2px solid theme('colors.tertiary');
   }
 

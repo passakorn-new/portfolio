@@ -1,34 +1,23 @@
+<script lang="ts">
+  import { fly } from 'svelte/transition';
+  import TextHeader from '$lib/components/TextHeader.svelte';
+  import { paragraph_1, paragraph_2, paragraph_3 } from '$lib/settings.json';
+</script>
+
 <svelte:head>
   <title>About</title>
 </svelte:head>
 
-<div class="content">
-  <h1>About this app</h1>
-
-  <p>
-    This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-    following into your command line and following the prompts:
-  </p>
-
-  <!-- TODO lose the @next! -->
-  <pre>npm init svelte@next</pre>
-
-  <p>
-    The page you're looking at is purely static HTML, with no client-side interactivity needed.
-    Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-    the devtools network panel and reloading.
-  </p>
-
-  <p>
-    The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
-    it with JavaScript disabled!
-  </p>
+<div class="w-full h-full overflow-auto px-20 py-20 sm:px-10 sm:py-5">
+  <TextHeader text="About me 🙋‍♂️" with_line={true} />
+  <div class="flex flex-row gap-3 md:flex-col">
+    <div in:fly={{ y: 200, duration: 1000 }} class="flex flex-col gap-y-4 pl-8 w-4/6 md:w-full">
+      <p class="leading-7"> {paragraph_1} </p>
+      <p class="leading-7"> {paragraph_2} </p>
+      <p class="leading-7"> {paragraph_3} </p>
+    </div>
+    <div in:fly={{ x: 200, duration: 1000 }} class="w-2/6 self-center md:w-full"> 
+      <img class="rounded-full ml-auto mr-auto" alt="passakorn.k" width={240} height={240} src="static/profile.jpg" />
+    </div>
+  </div>
 </div>
-
-<style>
-  .content {
-    width: 100%;
-    max-width: var(--column-width);
-    margin: var(--column-margin-top) auto 0 auto;
-  }
-</style>

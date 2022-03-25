@@ -1,9 +1,14 @@
 {
-  "fullname": "Passakorn Kijudomsup",
-  "sub_headers": ["Software Engineer", "Problem Solver", "Agile 👥"],
-  "description": "i love exploring and learning new things.",
   "github_link": "https://github.com/passakorn-new",
   "linkedin_link": "https://www.linkedin.com/in/passakorn-kijudomsup-b10b5b20b/",
   "leetcode_link": "https://leetcode.com/passakorn-new/",
-  "gmail_link": "mailto:passakorn.kijudomsup@gmail.com"
+  "gmail_link": "mailto:passakorn.kijudomsup@gmail.com",
+
+  "fullname": "Passakorn Kijudomsup",
+  "sub_headers": ["Software Engineer", "Problem Solver", "Agile 👥"],
+  "description": "i love exploring and learning new things.",
+
+  "paragraph_1": "Hello 👋 My name is New. I'm currently working at Gettgo as a Full Stack Engineer. I'm passionate about technology, coding and problem solving",
+  "paragraph_2": "I graduated from King Mongkut's University of Technology North Bangkok majoring in Computer Science. After i apprenticeships for 6 month at Sycapt Co., Ltd I realized there are many things i don't know, it's make me have passion for software developer.",
+  "paragraph_3": "After i become a software developer, i have intention to take part in software development on a global scale and i'll work hard to be sure all characters are my typing for development will make the best quality software."
 }
