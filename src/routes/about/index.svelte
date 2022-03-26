@@ -1,5 +1,6 @@
 <script lang="ts">
   import { fly } from 'svelte/transition';
+  import profile from '$lib/assets/profile.jpg'
   import TextHeader from '$lib/components/TextHeader.svelte';
   import { aboutMe } from '$src/data';
 </script>
@@ -22,7 +23,7 @@
         alt="passakorn.k"
         width={240}
         height={240}
-        src="/profile.jpg"
+        src={profile}
       />
     </div>
   </div>
