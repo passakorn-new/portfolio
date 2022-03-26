@@ -4,21 +4,21 @@
   import LinkedInIcon from '$lib/components/icons/LinkedInIcon.svelte';
   import LeetcodeIcon from '$lib/components/icons/LeetcodeIcon.svelte';
   import GmailIcon from '$lib/components/icons/GmailIcon.svelte';
-  import { github_link, linkedin_link, leetcode_link, gmail_link } from '$lib/settings.json';
+  import { socialLink } from '$src/data';
 </script>
 
 <footer class="px-4 py-2 flex flex-col gap-4 justify-center items-center bottom-0">
   <div class="flex flex-row gap-4">
-    <IconButton name="github" href={github_link} target="_blank">
+    <IconButton name="github" href={socialLink.github} target="_blank">
       <GithubIcon />
     </IconButton>
-    <IconButton name="linkedin" href={linkedin_link} target="_blank">
+    <IconButton name="linkedin" href={socialLink.linkedin} target="_blank">
       <LinkedInIcon />
     </IconButton>
-    <IconButton name="leetcode" href={leetcode_link} target="_blank">
+    <IconButton name="leetcode" href={socialLink.leetcode} target="_blank">
       <LeetcodeIcon />
     </IconButton>
-    <IconButton name="gmail" href={gmail_link} target="_blank">
+    <IconButton name="gmail" href={socialLink.gmail} target="_blank">
       <GmailIcon />
     </IconButton>
   </div>

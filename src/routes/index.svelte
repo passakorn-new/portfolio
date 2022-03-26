@@ -4,7 +4,7 @@
 
 <script lang="ts">
   import SlideContent from '$lib/components/SlideContent.svelte';
-  import { sub_headers, description } from '$lib/settings.json';
+  import { introData } from '$src/data';
 </script>
 
 <svelte:head>
@@ -15,7 +15,7 @@
   <p class="text-6xl text-white sm:text-3xl">Hello, I'm New 🧑🏻‍💻</p>
   <SlideContent
     class="absolute -translate-x-1/2 truncate text-4xl bg-clip-text text-transparent bg-gradient-to-r from-white to-tertiary sm:text-2xl"
-    contents={sub_headers}
+    contents={introData.subHeaders}
   />
-  <p class="text-gray-400 mt-8 sm:text-xs">{description}</p>
+  <p class="text-gray-400 mt-8 sm:text-xs">{introData.description}</p>
 </div>

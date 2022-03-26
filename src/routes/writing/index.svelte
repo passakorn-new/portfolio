@@ -2,8 +2,7 @@
   <title>Writing</title>
 </svelte:head>
 
-<div class="content">
-</div>
+<div class="content" />
 
 <style>
   .content {

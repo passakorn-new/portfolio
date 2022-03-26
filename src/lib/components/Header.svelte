@@ -1,13 +1,13 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import { fullname } from '$lib/settings.json';
+  import { introData } from '$src/data';
 </script>
 
 <header class="px-4 py-2 text-white flex justify-between sm:justify-center">
   <p
     class="p-4 text-sm tracking-widest uppercase font-mono duration-300 cursor-default hover:-translate-y-1 hover:scale-110 hover:text-tertiary sm:hidden"
   >
-    {fullname}
+    {introData.fullname}
   </p>
   <nav>
     <ul>
@@ -27,7 +27,7 @@
   </nav>
 </header>
 
-<style>
+<style style="postcss">
   ul {
     position: relative;
     padding: 0;
@@ -48,10 +48,6 @@
 
   li.active {
     animation: tab-selected 0.5s;
-    -webkit-animation: tab-selected 0.5s;
-    -moz-animation: tab-selected 0.5s;
-    -o-animation: tab-selected 0.5s;
-    -ms-animation: tab-selected 0.5s;
     transform: scale(1.15);
     border-bottom: 2px solid theme('colors.tertiary');
   }

@@ -1,5 +1,3 @@
-// const animated = require('./animation.config.js')
-
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {

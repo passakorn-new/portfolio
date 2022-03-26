@@ -10,7 +10,7 @@
   --pure-white: #ffffff;
   --primary-color: theme('colors.primary');
   --secondary-color: theme('colors.secondary');
-  --tertiary-color: theme('colors.tertiary');;
+  --tertiary-color: theme('colors.tertiary');
   --quaternary-color: theme('colors.quaternary');
   --accent-color: #ff3e00;
   --heading-color: rgba(0, 0, 0, 0.7);
@@ -26,17 +26,32 @@ body {
   min-height: calc(100vh - 64px);
   margin: 0;
   background-color: theme('colors.primary');
-  color: var(--pure-white)
+  color: var(--pure-white);
 }
 
-h1 { font-size: 32px; }
+h1 {
+  font-size: 32px;
+}
 
-
-@media screen and (max-width: 639px){ 
-  h1 { font-size: 24px; }
+@media screen and (max-width: 639px) {
+  h1 {
+    font-size: 24px;
+  }
 }
 
 @keyframes tab-selected {
-	0% { transform: scale(1); }
-	100% { transform: scale(1.15); }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
