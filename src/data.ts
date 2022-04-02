@@ -22,40 +22,42 @@ export const socialLink = {
 
 export const projects = [
   {
-    name: 'FLEET CARD SERVICE',
-    information:
+    title: 'FLEET CARD SERVICE',
+    description:
       'Fleet card service is a system of bank, I have assigned to integration data from other system and development feature and services.',
     year: 2018
   },
   {
-    name: 'GLUCAGON',
-    information:
-      "Glucagon is a web responsive for internal Swiftlet Co., Ltd. It's help about communicate of company (QA, DevOps, Business Consultant). This's my first project after i work.",
+    title: 'GLUCAGON',
+    description:
+      "Glucagon is a web responsive for internal Swiftlet Co., Ltd. It's help about communicate of company (QA, DevOps, Business Consultant). This's my first project after I work.",
     year: 2019
   },
   {
-    name: 'TEREBINTH CLOUD ERP',
-    information:
-      'Terebinth Cloud ERP is a business process management and information system (ERP) on the Cloud within the organization that integrates the functionality of every department or corporate units within a single system.',
+    title: 'TEREBINTH CLOUD ERP',
+    description:
+      'Terebinth Cloud ERP is a business process management and description system (ERP) on the Cloud within the organization that integrates the functionality of every department or corporate unit within a single system.',
     year: 2019,
     link: 'https://tereb.in.th/'
   },
   {
-    name: 'BI SUITE',
-    information:
-      'Bi suite (Business intelligence) is a platform with open API integration with various data sources for create report from other ERP system.',
+    title: 'BI-SUITE',
+    description:
+      'Bi-suite (Business Intelligence) is a platform with open API integration with various data sources for creating reports from other ERP systems.',
     year: 2020,
     link: 'https://bi-suite.swiftlet.co.th/'
   },
   {
-    name: 'GETTGO',
-    information: '',
+    title: 'GETTGO',
+    description:
+      'Gettgo we are building a new insurance comparison website. most customer-friendly, allowing customers to easily compare and purchase all range of insurance products, directly from the website (get and go!).',
     year: 2021,
     link: 'https://gettgo.com/'
   },
   {
-    name: 'GETTGO HERO',
-    information: '',
+    title: 'GETTGO HERO',
+    description:
+      'Gettgo Hero is a website for facilitating insurance agents. connected multiple insurers for different insurance products. Insurance agents use the website one-stop service to sell insurance products.',
     year: 2021,
     link: 'https://hero.gettgo.com/'
   }

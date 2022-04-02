@@ -1,6 +1,6 @@
 <script lang="ts">
   import { fly } from 'svelte/transition';
-  import profile from '$lib/assets/profile.jpg'
+  import profile from '$lib/assets/profile.jpg';
   import TextHeader from '$lib/components/TextHeader.svelte';
   import { aboutMe } from '$src/data';
 </script>
@@ -10,7 +10,7 @@
 </svelte:head>
 
 <div class="w-full h-full overflow-auto px-20 py-20 sm:px-10 sm:py-5">
-  <TextHeader text="About me 🙋‍♂️" withLine={true} />
+  <TextHeader text="About me" withLine={true} />
   <div class="flex flex-row gap-3 md:flex-col">
     <div in:fly={{ y: 200, duration: 1000 }} class="flex flex-col gap-y-4 pl-8 w-4/6 md:w-full">
       <p class="leading-7">{aboutMe.paragraphOne}</p>
