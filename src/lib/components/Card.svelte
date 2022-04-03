@@ -16,7 +16,12 @@
   class={`transition duration-500 relative flex-none bg-secondary overflow-y-auto rounded-2xl px-7 py-5 ${$$props.class} shadow-lg hover:shadow-2xl hover:scale-110`}
 >
   {#if card_info.link}
-    <a class="absolute right-4 top-4 cursor-pointer" href={card_info.link} target="_blank" aria-label="link_to">
+    <a
+      class="absolute right-4 top-4 cursor-pointer"
+      href={card_info.link}
+      target="_blank"
+      aria-label="link_to"
+    >
       <GlobeIcon />
     </a>
   {/if}
