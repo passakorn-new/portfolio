@@ -32,7 +32,7 @@
     <img class="py-3" alt={card_info.title} src={card_info.thumbnail} />
   {/if}
 
-  <p>{card_info.description}</p>
+  <p>{@html card_info.description}</p>
 
   {#if card_info.year}
     <div class="absolute bottom-0 right-0 px-3 py-1 bg-tertiary text-primary rounded-br-lg">
