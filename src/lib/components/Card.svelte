@@ -29,10 +29,10 @@
   <p class="text-xl pr-4 mb-2 border-b-2 text-tertiary font-bold w-fit">{card_info.title}</p>
 
   {#if card_info.thumbnail}
-    <img class="py-3" alt={card_info.title} src={card_info.thumbnail} />
+    <img class="py-3 w-full h-28" alt={card_info.title} src={card_info.thumbnail} />
   {/if}
 
-  <p>{@html card_info.description}</p>
+  <p>{card_info.description}</p>
 
   {#if card_info.year}
     <div class="absolute bottom-0 right-0 px-3 py-1 bg-tertiary text-primary rounded-br-lg">

@@ -23,7 +23,10 @@
   const extractContentStory = (stories) => {
     for (let i in stories) {
       let first_paragraph: string = stories[i]['description'].match(/<p>(.*?)<\/p>/)[1];
-      stories[i]['description'] = `${first_paragraph} ... `;
+
+      // remove html tag
+      first_paragraph = first_paragraph.replace(/(<([^>]+)>)/gi, '');
+      stories[i]['description'] = `${first_paragraph} ...`;
     }
     loading = false;
     return stories;
