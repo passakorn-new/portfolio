@@ -4,7 +4,7 @@
   import '../app.css';
 </script>
 
-<main class="flex flex-col w-screen h-screen justify-between">
+<main class="flex flex-col w-screen h-screen justify-between overflow-hidden">
   <Header />
   <slot />
   <Footer />

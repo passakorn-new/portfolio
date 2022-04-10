@@ -9,7 +9,7 @@
   <title>Projects</title>
 </svelte:head>
 
-<div class="w-full h-full overflow-auto px-20 py-20 sm:px-10 sm:py-5">
+<div class="w-full h-full px-20 py-20 overflow-y-scroll overflow-x-hidden sm:px-10 sm:py-5">
   <TextHeader text="Projects" withLine={true} />
 
   <div

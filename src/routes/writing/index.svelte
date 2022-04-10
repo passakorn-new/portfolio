@@ -51,7 +51,7 @@
   <title>Writing</title>
 </svelte:head>
 
-<div class="w-full h-full relative   overflow-auto px-20 py-20 sm:px-10 sm:py-5">
+<div class="w-full h-full relative px-20 py-20 sm:px-10 sm:py-5">
   {#if loading}
     <div class="w-fit h-fit fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
       <Shadow color="white" duration="1s" size="50" unit="px" />
